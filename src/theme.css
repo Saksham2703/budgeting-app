@@ -1,0 +1,60 @@
+:root {
+    --pastel-green: #a3c4bc;
+    --pastel-blue: #a7bcd7;
+    --soft-beige: #f3e9d2;
+    --button-blue: #88a2d4;
+    --text-gray: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--soft-beige);
+    color: var(--text-gray);
+}
+
+input,
+button {
+    font-family: inherit;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+}
+
+input {
+    background-color: #fff;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--button-blue);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darken(var(--button-blue), 10%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header {
+    font-size: 24px;
+    color: var(--text-gray);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    margin-top: 20px;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { collection, addDoc, query, where, getDocs, doc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { auth, db } from '../firebase';
+import '../theme.css';
 
 const Dashboard = () => {
   const [expense, setExpense] = useState('');
